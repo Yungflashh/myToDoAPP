@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./apps.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Input styling */
+        #input {
+            width: calc(100% - 24px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* Button styling */
+        button {
+            width:30%;
+            padding: 10px;
+            margin-right: 2%;
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:last-child {
+            margin-right: 0;
+        }
+
+        #addBtn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        #addBtn:hover {
+            background-color: #218838;
+        }
+
+        #deleteBtn {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        #deleteBtn:hover {
+            background-color: #c82333;
+        }
+
+        #viewBtn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        #viewBtn:hover {
+            background-color: #0069d9;
+        }
+    </style>
+
+    </style>
+    
+
+</head>
+<body>
+
+    <div class="container">
+ <h3>TO DO LIST </h3>
+
+ <input type="text" placeholder="INPUT TO DO HERE" id="input">
+ <button id="addBtn">ADD</button>
+ <button id="deleteBtn">DELETE</button>
+ <button id="viewBtn" onclick="viewAll()">VIEW ALL</button>
+
+ 
+ <ol id="para">
+    
+ </ol>
+
+</div>
+    
+</body>
+</html>
